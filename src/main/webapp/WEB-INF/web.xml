@@ -1,3 +1,6 @@
+<!-- 
+RESTFULL WEBSERVICE(REST API) USING JERSEY FRAMEWORK(and glassfish server) - Aliens Add and retrieve
+ -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This web.xml file is not required when using Servlet 3.0 container,
      see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
@@ -9,12 +12,12 @@
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.example.restFull</param-value>
+            <param-value>com.example.restFull</param-value><!-- package to take care of requests -->
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/webapi/*</url-pattern>
+        <url-pattern>/webapi/*</url-pattern><!-- will folow this url pattern -->
     </servlet-mapping>
 </web-app>
